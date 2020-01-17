@@ -1,0 +1,27 @@
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.2</jspversion>
+	
+	<tag>
+		<name>printUserTests</name>
+		<tagclass>tags.PrintUserTestsTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	
+	<tag>
+		<name>printLanguagesInfo</name>
+		<tagclass>tags.PrintLanguagesInfoTag</tagclass>
+		<bodycontent>empty</bodycontent>
+	</tag>
+	
+	<tag>
+		<name>pagesUpdate</name>
+		<tagclass>tags.PagesUpdateTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>currentPage</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

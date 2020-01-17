@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>ZFabbricaSemantica</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  	<jsp-config>
+		<taglib>
+			<taglib-uri>taglib1</taglib-uri>
+			<taglib-location>/WEB-INF/lib/taglib1.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+  
+  	<servlet>
+  		<servlet-name>BackHomeServlet</servlet-name>
+  		<servlet-class>servlets.BackHomeServlet</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<servlet-name>LogOutServlet</servlet-name>
+  		<servlet-class>servlets.LogOutServlet</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<servlet-name>LogInServlet</servlet-name>
+  		<servlet-class>servlets.LogInServlet</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<servlet-name>SignInServlet</servlet-name>
+  		<servlet-class>servlets.SignInServlet</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<servlet-name>TasksHandlerServlet</servlet-name>
+  		<servlet-class>servlets.TasksHandlerServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>BackHomeServlet</servlet-name>
+  		<url-pattern>/BackHome</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>LogOutServlet</servlet-name>
+  		<url-pattern>/LogOut</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>LogInServlet</servlet-name>
+  		<url-pattern>/LogIn</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>SignInServlet</servlet-name>
+  		<url-pattern>/SignIn</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>TasksHandlerServlet</servlet-name>
+  		<url-pattern>/TasksHandler</url-pattern>
+  	</servlet-mapping>
+  	
+</web-app>
